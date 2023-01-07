@@ -45,7 +45,7 @@ div{
 {
     padding: 16px 24px;
     border-radius: 16px;
-    border: 1px solid gray;
+    border: 1px solid #000;
     margin-top: 16px;
     writing-mode: vertical-lr;
     text-orientation: upright;
