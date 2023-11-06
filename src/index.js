@@ -1,17 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from "react-dom/client";
+import reviews from "./data";
+import "./reset.css";
+import "./style.css";
+import FeedbackSec from "./components/FeedbackSec";
+import AddReview from "./components/AddReview";
+import { useState } from "react";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+function App() {
+  const [updatedList, setUpdatedList] = useState(reviews);
+  function handleUpdatedList(response) {
+    setUpdatedList([...updatedList, response]);
+  }
+  return (
+    <>
+      <FeedbackSec reviews={updatedList} />
+      <AddReview  onSubmition ={handleUpdatedList} />
+    </>
+  );
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);
