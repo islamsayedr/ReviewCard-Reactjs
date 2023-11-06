@@ -1,0 +1,100 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* Reset some common styles */
+body, h1, h2, h3, p, ul, ol, li, dl, dt, dd, blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a base font size and line height */
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Remove underlines from links */
+a {
+  text-decoration: none;
+}
+
+/* Set default text color and background color */
+body {
+  color: #333;
+  background-color: #fff;
+}
+
+/* Remove list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove default block margins */
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after, q::before, q::after {
+  content: '';
+  content: none;
+}
+
+/* Ensure form elements are rendered consistently */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+/* Remove input and textarea border */
+input, textarea {
+  border: none;
+}
+
+/* Reset button styles */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Remove default focus styles for some elements */
+button, input, select, textarea {
+  outline: none;
+}
+
+/* Add some basic styles back */
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Add a little spacing to elements */
+h1, h2, h3, p {
+  margin-bottom: 0;
+}
+
+/* Add a basic border box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Custom styles */
+
+.flx{
+    display: flex;
+}
+.col{
+    flex-direction: column;
+}
+.center{
+    justify-content: center;
+}
