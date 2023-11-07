@@ -1,7 +1,7 @@
 const reviews = [
   {
     clientName: "Amany S.",
-    clientImg: "./assets/customer.png",
+    clientImg: "./assets/customer2.png",
     comment: "I liked the coloring of the mug most of all, but, unfortunately, after the first wash in the dishwasher small scratches appeared, it’s a shame :(",
     date: "12 Des 2023",
     rate: 2.9
