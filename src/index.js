@@ -5,6 +5,7 @@ import "./style.css";
 import FeedbackSec from "./components/FeedbackSec";
 import AddReview from "./components/AddReview";
 import { useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [updatedList, setUpdatedList] = useState(reviews);
@@ -14,7 +15,8 @@ function App() {
   return (
     <>
       <FeedbackSec reviews={updatedList} />
-      <AddReview  onSubmition ={handleUpdatedList} />
+      <AddReview onSubmition={handleUpdatedList} />
+      <Analytics />
     </>
   );
 }
